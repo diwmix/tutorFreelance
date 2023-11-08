@@ -33,7 +33,7 @@ app.use(
     },
     secret: process.env.ACCESS_SECRET,
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: false,
     store: MongoStore.create({ mongoUrl: process.env.DB_URL })
   })
 );
