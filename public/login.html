@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/pop-up.css" type="text/css">
+    <link rel="stylesheet" href="/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="/css/media.css" type="text/css">
+    <link rel="stylesheet" href="/css/preload.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./src/Frame 7.png">
+</head>
+<body>
+    <video class="ai-animation" alt="asdasdasd" autoplay loop muted src="/src/smoke.mp4"></video>
+    <div class="container">
+        <div class="pop-up-full" id="pop-up">
+            <div class="pop-up">
+                <form id="registration-form" class="info-form" action="/auth/login" method="POST">
+                    <div class="first-row" >
+                        <a href="/auth" class="back-button">x</a>
+                        <h2>Login</h2>
+                    </div>
+                    <div class="email-label">
+                        <label for="email">Email</label>
+                        <input 
+                            id="email" 
+                            name="email" 
+                            class="email-input" 
+                            type="email" >
+                    </div>
+                    <div class="password-label">
+                        <label for="password">Password</label>
+                        <input  
+                            id="password" 
+                            type="password" 
+                            name="password" >
+                    </div>
+                    <div class="last-row">
+                        <div>
+                            <input type="checkbox" id="remember-me" class="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <a class="reset-password">Forgot password?</a>
+                    </div>
+                    <div class="form-button-label">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>  
+            <div class="social-register">
+                <div class="facebook-icon">
+                    <svg class="facebook-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="facebook-path" d="M20 10C20 4.48 15.52 0 10 0C4.48 0 0 4.48 0 10C0 14.84 3.44 18.87 8 19.8V13H6V10H8V7.5C8 5.57 9.57 4 11.5 4H14V7H12C11.45 7 11 7.45 11 8V10H14V13H11V19.95C16.05 19.45 20 15.19 20 10Z" fill="black"/>
+                    </svg>
+                </div>
+                <div class="google-icon">
+                    <div class="blur-background"></div>
+                    <svg class="google-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="google-path" d="M15.545 6.55798C15.6383 7.09494 15.6848 7.63898 15.684 8.18398C15.684 10.618 14.814 12.676 13.3 14.069H13.302C11.978 15.292 10.158 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6568C0.842855 12.1565 0 10.1217 0 7.99998C0 5.87825 0.842855 3.84342 2.34315 2.34312C3.84344 0.842833 5.87827 -2.14298e-05 8 -2.14298e-05C9.98594 -0.0232798 11.9038 0.722811 13.352 2.08198L11.068 4.36598C10.2424 3.57895 9.1405 3.14797 8 3.16598C5.913 3.16598 4.14 4.57398 3.508 6.46998C3.17291 7.46348 3.17291 8.53947 3.508 9.53298H3.511C4.146 11.426 5.916 12.834 8.003 12.834C9.081 12.834 10.007 12.558 10.725 12.07H10.722C11.1389 11.7938 11.4955 11.436 11.7704 11.0182C12.0452 10.6003 12.2325 10.1312 12.321 9.63898H8V6.55898L15.545 6.55798Z" fill="black"/>
+                    </svg>
+                </div>
+            </div> 
+        </div>
+    </div>
+<script src=".js/input.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.registration-button, .login-button {
+    display: flex;
+    width: 200px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: arial;
+    border-radius: 10px;
+    border: 2px solid rgba(185, 185, 185, 0.301);
+    transition: 0.3s;
+
+}
+
+.registration-button:hover, .login-button:hover {
+    background-color: #fff;
+    color: #1e1e1e;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: 0px;
+}
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #00021b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 100px;
+    
+}
