@@ -1,5 +1,3 @@
-//sss
-
 const express = require('express');
 const mongoose = require('mongoose');
 const authRouter = require('./routers/authRouter.js');
