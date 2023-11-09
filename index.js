@@ -47,7 +47,7 @@ const options = {
   body: JSON.stringify({media_type: 'movie', media_id: 550, favorite: true})
 };
 
-fetch(url, options)
+fetch(favoriteUrl, options)
   .then((res) => res.json())
   .then((json) => console.log(json))
   .catch((err) => console.error("error:" + err));
