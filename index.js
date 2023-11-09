@@ -35,23 +35,6 @@ app.use(
   })
 );
 
-const favoriteUrl = "https://api.themoviedb.org/3/account/20688918/favorite";
-const options = {
-  method: "POST",
-  headers: {
-    accept: "application/json",
-    "content-type": "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MWIyMWU5ZjQxNzhjMWZjNjRkYTQwZDhkMThlNjBiMiIsInN1YiI6IjY1NGQwMjhlYjE4ZjMyMDBhYzNlZWU3NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9EVef75xfBpxCX2PXp5amYKwvu0YRQ2ZINKNgWiHh6Q",
-  },
-  body: JSON.stringify({media_type: 'movie', media_id: 550, favorite: true})
-};
-
-fetch(favoriteUrl, options)
-  .then((res) => res.json())
-  .then((json) => console.log(json))
-  .catch((err) => console.error("error:" + err));
-
 app.get("/auth", (req, res) => {
   res.sendFile(__dirname + "/public/auth.html");
 });
